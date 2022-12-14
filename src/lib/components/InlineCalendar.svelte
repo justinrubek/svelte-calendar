@@ -13,6 +13,7 @@
 	export let start = calendarDefaults.start;
 	export let end = calendarDefaults.end;
 	export let format = calendarDefaults.format;
+	export let marked = [];
 	export let formatted = '';
 	export let theme = {};
 	export let defaultTheme = undefined;

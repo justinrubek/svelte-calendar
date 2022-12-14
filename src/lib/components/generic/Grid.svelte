@@ -34,6 +34,11 @@
 	.grid > :global(*:hover) {
 		background: var(--sc-theme-calendar-colors-background-hover);
 	}
+	.grid > :global(*.marked) {
+		background: var(--sc-theme-calendar-colors-background-marked);
+		color: var(--sc-theme-calendar-colors-text-marked);
+		opacity: 1;
+	}
 	.grid > :global(*.selected) {
 		background: var(--sc-theme-calendar-colors-background-highlight);
 		color: var(--sc-theme-calendar-colors-text-highlight);

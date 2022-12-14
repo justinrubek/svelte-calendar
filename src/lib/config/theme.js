@@ -9,10 +9,12 @@ const light = {
 		colors: {
 			text: {
 				primary: '#333',
+				marked: '#fff',
 				highlight: '#fff'
 			},
 			background: {
 				primary: '#fff',
+				marked: '#ffe6cc',
 				highlight: '#eb7400',
 				hover: '#eee'
 			},
@@ -40,10 +42,12 @@ const dark = {
 		colors: {
 			text: {
 				primary: '#eee',
+				marked: '#fff',
 				highlight: '#fff'
 			},
 			background: {
 				primary: '#333',
+				marked: '#ddd4f7',
 				highlight: '#5829d6',
 				hover: '#222'
 			},

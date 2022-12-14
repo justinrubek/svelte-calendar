@@ -93,6 +93,7 @@
 								class:disabled={!store.isSelectable(day.date)}
 								class:selected={index === monthIndex &&
 									dayjs(day.date).isSame($store.selected, 'day')}
+								class:marked={store.isMarked(day.date)}
 								class:outsider={day.outsider}
 								out:send|local={{ key }}
 								in:receive|local={{ key }}
