@@ -41,6 +41,6 @@
   "type": "module",
   "svelte": "index.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@justinrubek:registry": "https://npm.pkg.github.com"
   }
 }
