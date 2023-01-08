@@ -1,3 +1,153 @@
+# 1.0.0 (2023-01-08)
+
+
+### Bug Fixes
+
+* .nojekyll for gh-pages ([0cfe8ae](https://github.com/justinrubek/svelte-calendar/commit/0cfe8aea31825b663a1d1e9767580c252027bc49))
+* **#128, #126:** Updates to project configuration to support usage inside svelte-kit applications ([#130](https://github.com/justinrubek/svelte-calendar/issues/130)) ([1edd9ef](https://github.com/justinrubek/svelte-calendar/commit/1edd9eff820a47a5619e5a11228ea80f3cd7a4cc)), closes [#128](https://github.com/justinrubek/svelte-calendar/issues/128) [#126](https://github.com/justinrubek/svelte-calendar/issues/126)
+* add [@semantic-release](https://github.com/semantic-release) plugins ([f93d866](https://github.com/justinrubek/svelte-calendar/commit/f93d866e5d56c891c9ea7ba6a5bee7fdbfc7a3a7))
+* add additional targets to postpackage  rewrite script ([83312d6](https://github.com/justinrubek/svelte-calendar/commit/83312d68d7106ab6ef5afc1622152aa5dbe2efee))
+* add FiniteGrid, update prettier/readme ([e578881](https://github.com/justinrubek/svelte-calendar/commit/e57888131b91b2770e340ab73c60cb3daa362692))
+* add postversion step for semantic-release ([2e80dfc](https://github.com/justinrubek/svelte-calendar/commit/2e80dfce51a8cc79225e0794e86c4918fdffbc55))
+* add prepackage step to rewrite  imports ([e19de04](https://github.com/justinrubek/svelte-calendar/commit/e19de04aacf8f4a39a2ea8b565fbd4f8556b495b))
+* add shouldEnlargeDay and enlargeDay (FKA showDay) to store; disable enlargeDay on InlineCalendar ([f6767ed](https://github.com/justinrubek/svelte-calendar/commit/f6767eddd52a4d66afbadf8c72c79355fd399d51))
+* add stopPropagation to touch events ([98f8ac1](https://github.com/justinrubek/svelte-calendar/commit/98f8ac1d1cbe0d29d7566a5107467b283031245e))
+* Add styling to indicate which dates are selectable.  Prevent out-of-range months from being selected in month-picker and add appropriate styling. ([e61b6b2](https://github.com/justinrubek/svelte-calendar/commit/e61b6b2e68d494be639fed85c7c94172c2cf8a24))
+* Added button type attribute ([#34](https://github.com/justinrubek/svelte-calendar/issues/34)) ([a5475eb](https://github.com/justinrubek/svelte-calendar/commit/a5475eb6227139d87fd6dde48f83a946e92ff577))
+* animation bug when enlarging day that is also present as outsider date of adjacent calendar page ([43199af](https://github.com/justinrubek/svelte-calendar/commit/43199af9c6a03e3c8ebf72bcd1ab9dd2e0774614))
+* browser compatibility issues ([06c5016](https://github.com/justinrubek/svelte-calendar/commit/06c5016d786bc482651a9a07e435ec20c93dca00))
+* bug fix for cellCount !== 1 in InfiniteGrid + additional exports ([8aa5ee2](https://github.com/justinrubek/svelte-calendar/commit/8aa5ee29e6eae882e4b9f6bd8565978536901114))
+* bugfix - un-enlarge day when picker closes ([290e8cc](https://github.com/justinrubek/svelte-calendar/commit/290e8ccc19a73b928ca8bb3798ca4e7fdf80fe3b))
+* css tweak to prevent overflow ([9197fb6](https://github.com/justinrubek/svelte-calendar/commit/9197fb6aa0b9ec481a6d7fd7b5e05b166d53420c))
+* doc navigation bar ([0384cf7](https://github.com/justinrubek/svelte-calendar/commit/0384cf781f7623091c0fcc5996346ad7a50308fb))
+* docs ([2afef36](https://github.com/justinrubek/svelte-calendar/commit/2afef3679791f9f7c0806bf52b7d8e4ecdd59722))
+* docs ([85da44c](https://github.com/justinrubek/svelte-calendar/commit/85da44c749b3601c6d6ecd90052b15e35e786c84))
+* docs ([904b716](https://github.com/justinrubek/svelte-calendar/commit/904b716d00c0652b5ebe7439fd0d38df22cef56c))
+* docs ([71d44db](https://github.com/justinrubek/svelte-calendar/commit/71d44dbec755eb74e35ed2982257a240551d8305))
+* docs ([04c449e](https://github.com/justinrubek/svelte-calendar/commit/04c449e7ce704f4041c5fabdd210b2500f3a1b6f))
+* docs ([cf0d7cd](https://github.com/justinrubek/svelte-calendar/commit/cf0d7cdacf0c533a54bd5645561f3fab2924f4a5))
+* docs ([c0533a3](https://github.com/justinrubek/svelte-calendar/commit/c0533a3326f56e285f9f8d41eb4070ff39f36646))
+* eslint fixes ([d6df6ac](https://github.com/justinrubek/svelte-calendar/commit/d6df6ac91a2ae72e23c549bc12d417d501b6794c))
+* export grids ([41e8612](https://github.com/justinrubek/svelte-calendar/commit/41e8612137afc75269f078137aeddc5743d25cd0))
+* firefox performance issue ([8d4e037](https://github.com/justinrubek/svelte-calendar/commit/8d4e03701200cc369666b92d0000b5497bfa934e))
+* Fix for popover positioning when parent changes dimensions ([ffaf6f4](https://github.com/justinrubek/svelte-calendar/commit/ffaf6f4a74dbc2e7816605d4bf5f8f5b43009ada))
+* Fix Popover.svelte bug introduced by svelte 3 migration.  Note, this introduces async/await which is not transpiled by buble.  Also, code style modifications. ([aa03bbd](https://github.com/justinrubek/svelte-calendar/commit/aa03bbdfd606ebe6b5e764d8083dcafd54bc5e58))
+* gh-pages & snowpack issues ([2e79a69](https://github.com/justinrubek/svelte-calendar/commit/2e79a69a9d308e35fcec2f17c691fa8a81eaccbd))
+* gh-pages generation ([a2f3e08](https://github.com/justinrubek/svelte-calendar/commit/a2f3e08af029849fa51875ec91b9caed7b7bc6c3))
+* handle scrollable action destroy lifecycle + fix touch delta math ([0b07ad3](https://github.com/justinrubek/svelte-calendar/commit/0b07ad3c0a7344fe98f3a29ad38c9cae3cfbf5f2))
+* ignore line for eslint (error suddenly popped up but only in travis [odd]) ([17c4be1](https://github.com/justinrubek/svelte-calendar/commit/17c4be133655eeed3cf881b30344681de22765c9))
+* implement eslint ([d8bd8cf](https://github.com/justinrubek/svelte-calendar/commit/d8bd8cfcc58319bbd8f6e0080560649bb4089f04))
+* json ([4696d50](https://github.com/justinrubek/svelte-calendar/commit/4696d503f657a912e49983351008b2a5af53f4da))
+* light gh-pages work ([5bb9739](https://github.com/justinrubek/svelte-calendar/commit/5bb9739e995144872f39813e4037abad52bc7465))
+* linting issue ([4ed23e2](https://github.com/justinrubek/svelte-calendar/commit/4ed23e23d5480b1b3992a6a2b7789588c1d51162))
+* linting issues ([8816456](https://github.com/justinrubek/svelte-calendar/commit/88164561adec02355722dc2252b7dabd42ac1d86))
+* linting issues ([a24aa7c](https://github.com/justinrubek/svelte-calendar/commit/a24aa7c8a91c370543a81c43ded222dd89d92ac0))
+* linting violations ([07c868f](https://github.com/justinrubek/svelte-calendar/commit/07c868f81dc5b230605a4fd9d84fac32f2421dfb))
+* minor style fixes ([e82b3e5](https://github.com/justinrubek/svelte-calendar/commit/e82b3e5f5d96c76186413f64c607e06c02293464))
+* move dayjs and just-throttle to dependencies ([6dee7b3](https://github.com/justinrubek/svelte-calendar/commit/6dee7b31ab1ab9bfe306e0015f8d53bf7069473d))
+* packaging issues ([866ae40](https://github.com/justinrubek/svelte-calendar/commit/866ae402e571547aad6e48f026c782a30a7749a6))
+* postpackage script ([0e5b953](https://github.com/justinrubek/svelte-calendar/commit/0e5b9532a8c5fe5bf8837e2f01ce0045159fe269))
+* push minified bundle ([a593a2c](https://github.com/justinrubek/svelte-calendar/commit/a593a2c79afd96b5c9c8c7aac56ff1731b70b8e8))
+* readme ([76a4ad7](https://github.com/justinrubek/svelte-calendar/commit/76a4ad7a83e65a784087f92da1d087a79bcc8b8a))
+* relase.config.js -> release.config.cjs ([52dce22](https://github.com/justinrubek/svelte-calendar/commit/52dce229cf1e506c676f36f967b05275cfae12ef))
+* release scripts ([7839ccc](https://github.com/justinrubek/svelte-calendar/commit/7839ccce60c2117a2af44b4f0f1f474b70d1eeb2))
+* release scripts ([a3bc1cb](https://github.com/justinrubek/svelte-calendar/commit/a3bc1cbedb2eeb2f96ee5825ccc60018e1427182))
+* release.config updates ([6b3651e](https://github.com/justinrubek/svelte-calendar/commit/6b3651e2615c0cab906d3ebd4d2f9784b9e6b743))
+* release.config.cjs ([62ce395](https://github.com/justinrubek/svelte-calendar/commit/62ce395371ec1ab49bddeeab884d42f1dfa06396))
+* remove .bind(this) in Popover component which is no longer needed in svelte v3 ([29341ea](https://github.com/justinrubek/svelte-calendar/commit/29341eae4da1dba9967d795763d568be2dc8de3b))
+* remove console.log ([a08ddf3](https://github.com/justinrubek/svelte-calendar/commit/a08ddf334c1fc6a0ed02309b12925a9bb1a97929))
+* remove erroneous setting from svelte.config.js ([38c529e](https://github.com/justinrubek/svelte-calendar/commit/38c529eac8b2d695457b291e1a4f6484ef182c10))
+* rewrite package.main (index.js) imports in postpackage script ([8374348](https://github.com/justinrubek/svelte-calendar/commit/8374348f4a97aef5dbfe15c4894dd52adaaa975f))
+* scrollable action - prevent scrolling on supplied node by disabling touch-action ([089f808](https://github.com/justinrubek/svelte-calendar/commit/089f808b38dd3a8d976a2af7c2a61b67037be01f))
+* Setup test page/bundle for non-svelte usage ([cf44ceb](https://github.com/justinrubek/svelte-calendar/commit/cf44ceb4d6647b3fe6618612015f00cd101fad76))
+* styles ([503b8e1](https://github.com/justinrubek/svelte-calendar/commit/503b8e15e1c7d56df9b92c985dd0709f31480b06))
+* styles ([73e7d59](https://github.com/justinrubek/svelte-calendar/commit/73e7d5956d7793d6e36ce9d0e2ffff8e7ffb99a2))
+* styling issue ([cf41e95](https://github.com/justinrubek/svelte-calendar/commit/cf41e95553eabc5745e603862139b0667cd792c5))
+* Update .popover class to .sc-popover to prevent conflict with bootstrap, fixes issue 41 ([#42](https://github.com/justinrubek/svelte-calendar/issues/42)) ([1ccdb62](https://github.com/justinrubek/svelte-calendar/commit/1ccdb6211f492dc99630b2e8ceca6e6e0d683656))
+* update action workflows ([890432f](https://github.com/justinrubek/svelte-calendar/commit/890432f9fd91f4a1a78dcb48a877cae344c3cc30))
+* update ci nodejs to v14 ([9c7c8e6](https://github.com/justinrubek/svelte-calendar/commit/9c7c8e645edb0749354b57f3bd7b18df9fcb4e0d))
+* update gh-pages title ([a736fe0](https://github.com/justinrubek/svelte-calendar/commit/a736fe0d7c91533d225dd2a81bc0365e7c2b5fed))
+* update gh-pages title ([0f2479c](https://github.com/justinrubek/svelte-calendar/commit/0f2479c0b080579d89161e03d8d4cbd625b79d57))
+* update inlinecalendar default props ([ecb3734](https://github.com/justinrubek/svelte-calendar/commit/ecb37340a1d1dd14243414ce1074d200eb20e04a))
+* update props documentation ([926f7a6](https://github.com/justinrubek/svelte-calendar/commit/926f7a6835fb1a5e8f7f4a2cb06f1dc8f786cf95))
+* update readme ([f879ed1](https://github.com/justinrubek/svelte-calendar/commit/f879ed15f9c8917a51ee3ac106feaaf8e1ab4343))
+* update readme ([c76eb3e](https://github.com/justinrubek/svelte-calendar/commit/c76eb3e3a45c3ae823df37521910f037df1b8ed0))
+* update release.config & package.main ([d04fd68](https://github.com/justinrubek/svelte-calendar/commit/d04fd682da1016c8b7033e1cb43542d75dae4833))
+* update release.config to use sveltekit package command ([acd0752](https://github.com/justinrubek/svelte-calendar/commit/acd0752ffe77ff6ee55852f6f32b81e0478036bb))
+* update snowpack base url for gh pages ([44a47ab](https://github.com/justinrubek/svelte-calendar/commit/44a47ab2c2aabd6725e76b9daad899b2ca48cb3c))
+* update version of timeutils ([a39c5d2](https://github.com/justinrubek/svelte-calendar/commit/a39c5d220c3e1e9c729ac5be78402d3093cf4c20))
+* update vscode settings ([5a8b9e9](https://github.com/justinrubek/svelte-calendar/commit/5a8b9e9641371477ca09700ce3a024e5dae2be7b))
+* use |local modifier for transitions so that they don't play out on navigation ([#67](https://github.com/justinrubek/svelte-calendar/issues/67)) ([8242299](https://github.com/justinrubek/svelte-calendar/commit/82422999770093b69095e1f8cdee50780b240fe0))
+* use default cursor instead of not-allowed for disabled days ([3d42536](https://github.com/justinrubek/svelte-calendar/commit/3d42536c5705fc278cb7a3b0b34725f723808a2a))
+
+
+### chore
+
+* **release:** 2.0.0 [skip ci] ([2a4cd9f](https://github.com/justinrubek/svelte-calendar/commit/2a4cd9f474a33efbd07690a002094e79c6c57fbe))
+
+
+* breaking change: add snowpack build process, github actions, and fix for default start/end dates (#103) ([40346a4](https://github.com/justinrubek/svelte-calendar/commit/40346a4b9e7e308d13a36cd7a205bcadabc1fc35)), closes [#103](https://github.com/justinrubek/svelte-calendar/issues/103)
+
+
+### Features
+
+* add basic theming functionality ([ce244db](https://github.com/justinrubek/svelte-calendar/commit/ce244dbddbf7594ce15ab921b97d1daf37bfd88e))
+* Add marked dates to InlineCalendar ([7d126be](https://github.com/justinrubek/svelte-calendar/commit/7d126bec225d3860235092b6ec4bab70f235d2b4))
+* add startOfWeekIndex prop and update props documentation ([73de1d4](https://github.com/justinrubek/svelte-calendar/commit/73de1d4c93580e9e226b590397456f7569b727e7))
+* allow styling of div which wraps the Datepicker component ([19d4b07](https://github.com/justinrubek/svelte-calendar/commit/19d4b077de218a6a074291867f5749dc2a375bae))
+* emit dateSelected event from <Datepicker />, [beyonk-adventures:feature/onchange-event] ([c11fc69](https://github.com/justinrubek/svelte-calendar/commit/c11fc6952b9079b73aaf0056708da939b1133a6d))
+* Internationalization (add daysOfWeek and monthsOfYear props) ([a290701](https://github.com/justinrubek/svelte-calendar/commit/a290701f52b49aebbccb03e8b70df92650eaaf95))
+* Internationalization (add daysOfWeek and monthsOfYear props) ([20c6d5a](https://github.com/justinrubek/svelte-calendar/commit/20c6d5a20ec8b83fb6df22404a2328190fc4f4c8))
+* lighter color/opacity for disabled days ([d139457](https://github.com/justinrubek/svelte-calendar/commit/d13945709952fe8e779236b9c124a53d16d541b7))
+* Merge pull request [#16](https://github.com/justinrubek/svelte-calendar/issues/16) from beyonk-adventures/feature/console-warnings ([6ba44f5](https://github.com/justinrubek/svelte-calendar/commit/6ba44f50a8ce408ef862f5d18e71dd02c6f9b6c0))
+* pass formattedSelected to slot ([3149c93](https://github.com/justinrubek/svelte-calendar/commit/3149c9352db51f3f8a421ea7af9d63b2677240d6))
+* pass selected to slot ([3a5bd43](https://github.com/justinrubek/svelte-calendar/commit/3a5bd435c8b4744e0aaa48f614aca00aa7b95692))
+* remove pseudo element ([b3078ab](https://github.com/justinrubek/svelte-calendar/commit/b3078ab0aeccf79a89a2c28e7361abb3b85fcc9c))
+
+
+### Reverts
+
+* 2c52cb9de5391b670e46d0ef185268bde28a2c36 ([991f2ae](https://github.com/justinrubek/svelte-calendar/commit/991f2ae7be9f864a771d36e94ca6670ca56bd09e))
+
+
+### BREAKING CHANGES
+
+* v3.0.0 release
+* **release:** add snowpack build process, github actions, and fix for default start/end dates (#103) ([40346a4](https://github.com/6eDesign/svelte-calendar/commit/40346a4b9e7e308d13a36cd7a205bcadabc1fc35)), closes [#103](https://github.com/6eDesign/svelte-calendar/issues/103)
+
+### BREAKING CHANGES
+
+* update default start/end dates & new build process
+
+* feat: CI workflow
+
+* fix: CI workflow update
+
+* fix: remove package-lock from gitignore
+
+* fix: remove .travis.yml
+
+* fix: add github pages to release.yml workflow
+
+* fix: update readme
+
+Co-authored-by: Jonathan Greenemeier <jonathan.greenemeier31@t-mobile.com>
+* update default start/end dates & new build process
+
+* feat: CI workflow
+
+* fix: CI workflow update
+
+* fix: remove package-lock from gitignore
+
+* fix: remove .travis.yml
+
+* fix: add github pages to release.yml workflow
+
+* fix: update readme
+
+Co-authored-by: Jonathan Greenemeier <jonathan.greenemeier31@t-mobile.com>
+
 ## [3.1.6](https://github.com/6eDesign/svelte-calendar/compare/v3.1.5...v3.1.6) (2021-09-22)
 
 
