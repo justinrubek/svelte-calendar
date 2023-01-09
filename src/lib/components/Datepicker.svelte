@@ -18,12 +18,14 @@
 	export let theme = {};
 	export let defaultTheme = undefined;
 	export let startOfWeekIndex = 0;
+    export let markedDates = [];
 	export let store = datepickerStore.get({
 		selected,
 		start,
 		end,
 		shouldEnlargeDay: true,
-		startOfWeekIndex
+		startOfWeekIndex,
+        markedDates,
 	});
 
 	setContext(storeContextKey, store);

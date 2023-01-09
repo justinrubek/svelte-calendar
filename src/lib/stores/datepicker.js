@@ -13,13 +13,13 @@ const pipe = (...fns) => (val) => fns.reduce((accum, fn) => fn(accum), val);
 const zeroDay = (date) => dayjs(date).startOf('day').toDate();
 
 const buildMarkedDates = (dates = []) => {
-	return dates.reduce((acc, date) => {
+	const datesMarked = dates.reduce((acc, date) => {
 		const year = date.getFullYear();
 		const month = date.getMonth();
 		const day = date.getDate();
 		const markedMonths = acc[year] || {};
 		const markedDays = markedMonths[month] || [];
-		const updatedDays = markedDays.include(day) ? markedDays : [...markedDays, day];
+		const updatedDays = markedDays.includes(day) ? markedDays : [...markedDays, day];
 
 		return {
 			...acc,
@@ -29,14 +29,16 @@ const buildMarkedDates = (dates = []) => {
 			}
 		};
 	}, {})
+    console.log(datesMarked)
+    return datesMarked;
 };
 
-const get = ({ selected, start, end, startOfWeekIndex = 0, shouldEnlargeDay = false, marked = [] }) => {
+const get = ({ selected, start, end, startOfWeekIndex = 0, shouldEnlargeDay = false, markedDates = [] }) => {
 	const { subscribe, set, update } = writable({
 		open: false,
 		hasChosen: false,
 		selected,
-		marked: buildMarkedDates(marked),
+		markedDates: buildMarkedDates(markedDates),
 		start: zeroDay(start),
 		end: zeroDay(end),
 		shouldEnlargeDay,
@@ -66,7 +68,12 @@ const get = ({ selected, start, end, startOfWeekIndex = 0, shouldEnlargeDay = fa
 		},
 		isMarked(date) {
 			const { markedDates } = this.getState();
-			return !!markedDates[date.getFullYear()]?.[date.getMonth]?.includes(date.getDate());
+            if (markedDates == null) return false;
+            let year = date.getFullYear();
+            let month = date.getMonth();
+            let day = date.getDate();
+			const marked = markedDates[year] && markedDates[year][month] && markedDates[year][month].includes(day);
+            return marked;
 		},
 		isSelectable(date, clamping = []) {
 			const vector = this.getSelectableVector(date);
