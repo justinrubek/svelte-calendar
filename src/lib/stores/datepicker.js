@@ -75,6 +75,9 @@ const get = ({ selected, start, end, startOfWeekIndex = 0, shouldEnlargeDay = fa
 			const marked = markedDates[year] && markedDates[year][month] && markedDates[year][month].includes(day);
             return marked;
 		},
+        setMarkedDates(dates) {
+            update((state) => ({ ...state, markedDates: buildMarkedDates(dates) }));
+        },
 		isSelectable(date, clamping = []) {
 			const vector = this.getSelectableVector(date);
 			if (vector === 0) return true;
